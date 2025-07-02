@@ -1,7 +1,7 @@
 TARGET := macosx:clang:latest:15.0
 
 
-ARCHS = arm64e
+ARCHS = arm64e arm64 x86_64
 
 include $(THEOS)/makefiles/common.mk
 
