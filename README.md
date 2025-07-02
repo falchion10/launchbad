@@ -6,12 +6,9 @@ sudo mkdir -p /Library/Preferences/FeatureFlags/Domain
 sudo defaults write /Library/Preferences/FeatureFlags/Domain/SpotlightUI.plist SpotlightPlus -dict Enabled -bool false
 ```
 
-after running these reboot
+After running these `reboot`.
 
-
-thanks to @asentientbot
-
-
+Thanks to @asentientbot
 
 # Image
 <img width="1512" alt="image" src="https://github.com/user-attachments/assets/79a33d39-59c9-4db2-8453-8f4acf447a7a" />
@@ -22,21 +19,15 @@ Hooks a feature flag to bring back old launchpad
 # Requirements
 -arm64e-preview-abi=1 or amfi_get_out_of_my_way=1 boot args (which also means disabled SIP and reduced/permissive security)
 
-having the file /Library/TweakInject/libEllekit.dylib 
-
-https://github.com/doraorak/Dylinject
-
-# Usage 
-inject the dylib to dock
+Tweak injection platform instealled (specifically ellekit).
 
 # Building using Theos
+
+Needed to build for any macOS tweak currently, move back if you build for other platforms.
+
+`mv $THEOS/vendor/include/{IOKit,IOKit_iOS}`
 
 `make clean package`
 
 # Limitations
-clicking launchpad icon again doesn't exit launchpad.
-FIX: Go into the applications folder and replace Apps.app with the original Launchpad.app
-
-(terminal command doesn't seem to have this issue)
-
-
+Clicking Apps.app icon again doesn't exit launchpad, can be fixed by just using Launchpad.app instead of Apps.app
