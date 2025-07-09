@@ -7,9 +7,12 @@ sudo defaults write /Library/Preferences/FeatureFlags/Domain/SpotlightUI.plist S
 ```
 
 To undo the change
-`sudo rm -rf /Library/Preferences/FeatureFlags`
 
-After running these `reboot`.
+```
+sudo rm -rf /Library/Preferences/FeatureFlags`
+```
+
+After running either set of commands `reboot`.
 
 Thanks to @asentientbot
 
