@@ -36,4 +36,4 @@ Needed to build for any macOS tweak currently, move back if you build for other 
 `make clean package`
 
 # Limitations
-Clicking Apps.app icon again doesn't exit launchpad, can be fixed by just using Launchpad.app instead of Apps.app
+Clicking Apps.app icon again doesn't exit launchpad, can be fixed by just using Launchpad.app instead of Apps.app. As an FYI to anyone, Launchpad.app has been removed in macOS 26 Developer Beta 4 and just adding it back to /Applications from an older macOS version doesn't work.
